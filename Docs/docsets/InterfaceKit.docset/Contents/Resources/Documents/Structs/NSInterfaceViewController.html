@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NSInterfaceViewController Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/NSInterfaceViewController" class="dashAnchor"></a>
+
+    <a title="NSInterfaceViewController Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          InterfaceKit 5.4.0 Docs
+        </a>
+         (93% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/adong666666/InterfaceKit">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fzsd.name%2FInterfaceKit%2Fdocsets%2FInterfaceKit.xml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">InterfaceKit Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NSInterfaceViewController Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceView.html">InterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceViewController.html">InterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceViewController.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceView.html">NSInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceView.html#/s:12InterfaceKit15NSInterfaceViewV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceViewController.html">NSInterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceViewController.html#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WKInterfaceView.html">WKInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WKInterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>NSInterfaceViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NSInterfaceViewController</span> <span class="p">:</span> <span class="kt">NSViewControllerRepresentable</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>NSInterfaceViewController</code> struct helps you to use AppKit NSViewController or its
+derived class in project using SwiftUI. <code>NSInterfaceViewController</code> is a type that
+represents part of your app&rsquo;s user interface using AppKit and provides
+modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your AppKit
+ViewController View by using <code>NSInterfaceViewController(MyViewController())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>NSInterfaceViewController</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>A wrapper that you use to integrate an AppKit view controller into your
+SwiftUI interface.</p>
+
+<p>Use an <code>NSViewControllerRepresentable</code> instance to create and manage an
+<a href="doc://com.apple.documentation/documentation/AppKit/NSViewController">doc://com.apple.documentation/documentation/AppKit/NSViewController</a> object in your
+SwiftUI interface. Adopt this protocol in one of your app&rsquo;s custom
+instances, and use its methods to create, update, and tear down your view
+controller. The creation and update processes parallel the behavior of
+SwiftUI views, and you use them to configure your view controller with your
+app&rsquo;s current state information. Use the teardown process to remove your
+view controller cleanly from your SwiftUI. For example, you might use the
+teardown process to notify other objects that the view controller is
+disappearing.</p>
+
+<p>To add your view controller into your SwiftUI interface, create your
+<code>NSViewControllerRepresentable</code> instance and add it to your SwiftUI
+interface. The system calls the methods of your custom instance at
+appropriate times.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+view controller to other parts of your SwiftUI interface. When you want your
+view controller to coordinate with other SwiftUI views, you must provide a
+<code>NSViewControllerRepresentable/Coordinator</code> instance to facilitate those
+interactions. For example, you use a coordinator to forward target-action
+and delegate messages from your view controller to any SwiftUI views.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV02nsadE0So06NSViewE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/nsInterfaceViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV02nsadE0So06NSViewE0Cvp">nsInterfaceViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of view controller to present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">nsInterfaceViewController</span><span class="p">:</span> <span class="kt">NSViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV8callbackyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/callback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV8callbackyycSgvp">callback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>closure</code> helps you finish some special things like work to be done in AppKit interface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">callback</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerVyACSo06NSViewE0C_yycSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerVyACSo06NSViewE0C_yycSgtcfc">init(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSInterfaceViewController</code> instance from the specified parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">nsInterfaceViewController</span><span class="p">:</span> <span class="kt">NSViewController</span> <span class="o">=</span> <span class="kt">NSViewController</span><span class="p">(),</span> <span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nsInterfaceViewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The<code>NSViewController</code>type. The type of view controller you want to present in project.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The<code>(() -&gt; Void)?</code>type which helps you call some method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV010makeNSViewE07contextSo0gE0C7SwiftUI0gE20RepresentableContextVyACG_tF"></a>
+                    <a name="//apple_ref/swift/Method/makeNSViewController(context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV010makeNSViewE07contextSo0gE0C7SwiftUI0gE20RepresentableContextVyACG_tF">makeNSViewController(context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates the view controller object and configures its initial state.</p>
+
+<p>You must implement this method and use it to create your view controller
+object. Create the view controller using your app&rsquo;s current data and
+contents of the <code>context</code> parameter. The system calls this method only
+once, when it creates your view controller for the first time. For all
+subsequent updates, the system calls the
+<code>NSViewControllerRepresentable/updateNSViewController(_:context:)</code>
+method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeNSViewController</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">Context</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A context structure containing information about
+the current state of the system.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Your AppKit view controller configured with the provided
+information.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV012updateNSViewE0_7contextySo0gE0C_7SwiftUI0gE20RepresentableContextVyACGtF"></a>
+                    <a name="//apple_ref/swift/Method/updateNSViewController(_:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV012updateNSViewE0_7contextySo0gE0C_7SwiftUI0gE20RepresentableContextVyACGtF">updateNSViewController(_:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the state of the specified view controller with new information
+from SwiftUI.</p>
+
+<p>When the state of your app changes, SwiftUI updates the portions of your
+interface affected by those changes. SwiftUI calls this method for any
+changes affecting the corresponding AppKit view controller. Use this
+method to update the configuration of your view controller to match the
+new state information provided in the <code>context</code> parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateNSViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">nsViewController</span><span class="p">:</span> <span class="kt">NSViewController</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Context</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nsViewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Your custom view controller object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A context structure containing information about the current
+state of the system.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC"></a>
+                    <a name="//apple_ref/swift/Class/Coordinator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">Coordinator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A return type for function <code>makeCoordinator</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Coordinator</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV15makeCoordinatorAC0G0CyF"></a>
+                    <a name="//apple_ref/swift/Method/makeCoordinator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV15makeCoordinatorAC0G0CyF">makeCoordinator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates the custom object that you use to communicate changes from your
+view controller to other parts of your SwiftUI interface.</p>
+
+<p>Implement this method if changes to your view controller might affect
+other parts of your app. In your implementation, create a custom Swift
+instance that can communicate with other parts of your interface. For
+example, you might provide an instance that binds its variables to
+SwiftUI properties, causing the two to remain synchronized. If your view
+controller doesn&rsquo;t interact with other parts of your app, providing a
+coordinator is unnecessary.</p>
+
+<p>SwiftUI calls this method before calling the
+<code>NSViewControllerRepresentable/makeNSViewController(context:)</code> method.
+The system provides your coordinator instance either directly or as part
+of a context structure when calling the other methods of your
+representable instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeCoordinator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NSInterfaceViewController.html#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">Coordinator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://zsd.name/" target="_blank" rel="external">Saidong Zhang</a>. All rights reserved. (Last updated: 2021-05-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

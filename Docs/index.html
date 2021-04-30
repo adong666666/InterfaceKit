@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InterfaceKit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="InterfaceKit  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          InterfaceKit 5.4.0 Docs
+        </a>
+         (93% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/adong666666/InterfaceKit">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fzsd.name%2FInterfaceKit%2Fdocsets%2FInterfaceKit.xml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">InterfaceKit Reference</a>
+      <img class="carat" src="img/carat.png" />
+      InterfaceKit  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceView.html">InterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceViewController.html">InterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceViewController.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceView.html">NSInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceView.html#/s:12InterfaceKit15NSInterfaceViewV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceViewController.html">NSInterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceViewController.html#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WKInterfaceView.html">WKInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WKInterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='interfacekit' class='heading'>InterfaceKit</h1>
+
+<p>========================</p>
+
+<p><a href="https://img.shields.io/cocoapods/v/InterfaceKit.svg"><img src="https://img.shields.io/cocoapods/v/InterfaceKit.svg" alt="CocoaPods Compatible"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
+<a href="https://github.com/apple/swift-package-manager" alt="Swift Package Manager Compatible" title="InterfaceKit on Swift Package Manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" /></a>
+<img src="https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-333333.svg" alt="Supported Platforms: iOS, macOS, tvOS, watchOS & Linux" />
+<a href="https://zsd.name" target="_blank"><img src="https://github.com/adong666666/InterfaceKit/workflows/InterfaceKit%20CI/badge.svg?branch=master" alt="Build Status" /></a>
+<a href="https://developer.apple.com/swift"><img src="http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat" alt="Language"></a>
+<a href="http://mit-license.org"><img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License"></a>
+<a href="https://github.com/adong666666/InterfaceKit/issues?state=open"><img src="https://img.shields.io/github/issues/adong666666/InterfaceKit.svg?style=flat" alt="Issues"></a>
+<a href=""><img src="https://img.shields.io/badge/QQ-3440217568-yellow.svg?style=flat" alt="QQ"></a>
+<a href="https://github.com/adong666666/InterfaceKit/stargazers"><img src="https://img.shields.io/github/stars/adong666666/InterfaceKit.svg" alt="GitHub stars"></a></p>
+
+<p><code>One line of code</code> to implement interfaces of <code>UIKit,AppKit,and WatchKit</code> in <code>SwiftUI</code> interface!</p>
+<h5 id='img-src-https-github-com-adong666666-interfacekit-raw-master-pictures-china-png-alt-cn-chinese-simplified-a-href-https-github-com-adong666666-interfacekit-blob-master-readme-zh-hans-md-中文文档-a' class='heading'><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/China.png" alt="cn"> Chinese (Simplified): <a href="https://github.com/adong666666/InterfaceKit/blob/master/README.zh-Hans.md">中文文档</a></h5>
+<h5 id='code-interpretation-document-a-href-https-github-com-adong666666-interfacekitdoc-https-github-com-adong666666-interfacekitdoc-a-or-this-repository-39-s-code-docs-code' class='heading'>Code interpretation document: <a href="https://github.com/adong666666/InterfaceKitDoc">https://github.com/adong666666/InterfaceKitDoc</a>(or this repository&rsquo;s <code>Docs</code>)</h5>
+
+<p>The basic idea of InterfaceKit is that we want some user interface abstraction layer that sufficiently encapsulates actually calling UIKit,AppKit,and WatchKit directly. It should be simple enough that common things are easy, but comprehensive enough that complicated things are also easy.</p>
+
+<p>You can check out more about the project direction in the <a href="https://github.com/adong666666/InterfaceKit/blob/master/Vision.md">vision document</a>.</p>
+<pre class="highlight plaintext"><code>                    ┌──────────────┐
+                    │   SwiftUI    │
+                    └──────▲───────┘
+                           │        
+┌──────────────────────────┴───────────────────────────┐
+│                    InterfaceKit                      │
+└───────▲──────────────────▲───────────────────▲───────┘
+        │                  │                   │        
+┌───────┴──────┐    ┌──────┴───────┐    ┌──────┴───────┐
+│     UIKit    │    │    AppKit    │    │   WatchKit   │
+└──────────────┘    └──────────────┘    └──────────────┘
+</code></pre>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#communication">Communication</a></li>
+<li><a href="#status">Status</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#donations">Donations</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] use interface of UIKit in SwiftUI interface</li>
+<li>[x] use interface of AppKit in SwiftUI interface</li>
+<li>[x] use interface of WatchKit in SwiftUI interface</li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='universal' class='heading'>Universal</h3>
+<h4 id='for-ios-or-tvos' class='heading'>For iOS or tvOS:</h4>
+
+<ul>
+<li><p>To present UIView.</p>
+<pre class="highlight swift"><code><span class="kt">InterfaceView</span><span class="p">(</span><span class="kt">MyUIView</span><span class="p">())</span>
+</code></pre></li>
+<li><p>To present UIViewController.</p>
+<pre class="highlight swift"><code><span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyUIViewController</span><span class="p">())</span>
+</code></pre></li>
+</ul>
+<h4 id='for-macos' class='heading'>For macOS:</h4>
+
+<ul>
+<li><p>To present NSView.</p>
+<pre class="highlight swift"><code><span class="kt">NSInterfaceView</span><span class="p">(</span><span class="kt">MyNSView</span><span class="p">())</span>
+</code></pre></li>
+<li><p>To present NSViewController.</p>
+<pre class="highlight swift"><code><span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyNSViewController</span><span class="p">())</span>
+</code></pre></li>
+</ul>
+<h4 id='for-watchos' class='heading'>For watchOS:</h4>
+
+<ul>
+<li>To present WKInterfaceObject.</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+</code></pre>
+<h4 id='eg' class='heading'>eg.</h4>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftUI</span>
+<span class="kd">import</span> <span class="kt">InterfaceKit</span>
+
+<span class="kd">struct</span> <span class="kt">MyInterfaceView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">ZStack</span> <span class="p">{</span>
+            <span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+            <span class="kt">InterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+            <span class="kt">SwiftUIView</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#if DEBUG</span>
+<span class="kd">struct</span> <span class="kt">MyInterfaceView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">MyInterfaceView</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">#endif</span>
+</code></pre>
+<h3 id='with-closure' class='heading'>With Closure</h3>
+
+<p>You can do something while presenting SwiftUI view.</p>
+
+<ul>
+<li>For Example</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyUIViewController</span><span class="o">.</span><span class="n">shared</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
+    <span class="kt">MyUIViewController</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="kt">SomeViewControler</span><span class="o">.</span><span class="n">shared</span>
+    <span class="kt">MyUIViewController</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span>
+    <span class="kt">MyUIViewController</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">white</span>
+    <span class="kt">MyUIViewController</span><span class="o">.</span><span class="nf">someFunction</span><span class="p">()</span>
+    <span class="nf">networkRequest</span><span class="p">()</span>
+    <span class="kt">JSONParsing</span><span class="p">()</span>
+    <span class="nf">downloadFile</span><span class="p">()</span>
+    <span class="nf">showProgress</span><span class="p">()</span>
+    <span class="nf">makeToast</span><span class="p">()</span>
+    <span class="nf">databaseOperation</span><span class="p">()</span>
+    <span class="c1">//do something</span>
+    <span class="o">...</span>
+<span class="p">})</span>
+<span class="o">.</span><span class="nf">navigationBarBackButtonHidden</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+<span class="o">.</span><span class="nf">navigationBarHidden</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+<span class="o">.</span><span class="nf">navigationBarTitle</span><span class="p">(</span><span class="kt">I18n</span><span class="o">.</span><span class="nf">localizedString</span><span class="p">(</span><span class="s">"Title"</span><span class="p">),</span> <span class="nv">displayMode</span><span class="p">:</span> <span class="o">.</span><span class="n">large</span><span class="p">)</span>
+</code></pre>
+<h3 id='multiple-platforms' class='heading'>Multiple platforms</h3>
+
+<p>InterfaceKit makes it clearer for multiple platforms programming.</p>
+
+<ul>
+<li>For Example</li>
+</ul>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftUI</span>
+<span class="kd">import</span> <span class="kt">MapKit</span>
+<span class="kd">import</span> <span class="kt">InterfaceKit</span>
+
+<span class="k">let</span> <span class="nv">kStr</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="cp">#if os(iOS) || os(tvOS)</span>
+    <span class="kd">typealias</span> <span class="kt">OSViewController</span> <span class="o">=</span> <span class="kt">UIViewController</span>
+    <span class="kd">typealias</span> <span class="kt">OSView</span> <span class="o">=</span> <span class="kt">UILabel</span>
+    <span class="kd">typealias</span> <span class="kt">OSInterfaceView</span> <span class="o">=</span> <span class="kt">InterfaceView</span>
+    <span class="kd">typealias</span> <span class="kt">OSInterfaceVC</span> <span class="o">=</span> <span class="kt">InterfaceViewController</span>
+    <span class="k">let</span> <span class="nv">kBounds</span> <span class="o">=</span> <span class="kt">UIScreen</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">bounds</span> <span class="k">as</span> <span class="kt">CGRect</span><span class="p">?</span>
+<span class="cp">#elseif os(macOS)</span>
+    <span class="kd">typealias</span> <span class="kt">OSViewController</span> <span class="o">=</span> <span class="kt">NSViewController</span>
+    <span class="kd">typealias</span> <span class="kt">OSView</span> <span class="o">=</span> <span class="kt">NSTextField</span>
+    <span class="kd">typealias</span> <span class="kt">OSInterfaceView</span> <span class="o">=</span> <span class="kt">NSInterfaceView</span>
+    <span class="kd">typealias</span> <span class="kt">OSInterfaceVC</span> <span class="o">=</span> <span class="kt">NSInterfaceViewController</span>
+    <span class="k">let</span> <span class="nv">kBounds</span> <span class="o">=</span> <span class="kt">NSScreen</span><span class="o">.</span><span class="n">main</span><span class="p">?</span><span class="o">.</span><span class="n">frame</span>
+<span class="cp">#endif</span>
+
+<span class="kd">@main</span>
+<span class="kd">struct</span> <span class="kt">EApp</span><span class="p">:</span> <span class="kt">App</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">Scene</span> <span class="p">{</span>
+        <span class="kt">WindowGroup</span> <span class="p">{</span>
+            <span class="kt">ZStack</span> <span class="p">{</span>
+                <span class="cp">#if !os(watchOS)</span>
+                    <span class="kt">OSInterfaceView</span><span class="p">(</span><span class="kt">MKMapView</span><span class="p">())</span>
+                    <span class="kt">OSInterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">(),</span> <span class="p">{</span> <span class="nf">print</span><span class="p">(</span><span class="n">kStr</span><span class="p">)</span> <span class="p">})</span>
+                    <span class="kt">OSInterfaceVC</span><span class="p">(</span><span class="kt">MyVC</span><span class="p">())</span>
+                <span class="cp">#else</span>
+                    <span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">WKInterfaceMap</span><span class="p">(),</span> <span class="p">{</span> <span class="nf">print</span><span class="p">(</span><span class="n">kStr</span><span class="p">)</span> <span class="p">})</span>
+                <span class="cp">#endif</span>
+                <span class="kt">Text</span><span class="p">(</span><span class="n">kStr</span><span class="p">)</span><span class="o">.</span><span class="nf">foregroundColor</span><span class="p">(</span><span class="o">.</span><span class="n">purple</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#if !os(watchOS)</span>
+<span class="kd">class</span> <span class="kt">MyVC</span><span class="p">:</span> <span class="kt">OSViewController</span> <span class="p">{</span>
+    <span class="cp">#if os(iOS) || os(tvOS)</span>
+        <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">lbl</span> <span class="o">=</span> <span class="kt">MyView</span><span class="p">()</span>
+            <span class="n">lbl</span><span class="o">.</span><span class="n">textAlignment</span> <span class="o">=</span> <span class="o">.</span><span class="n">right</span>
+            <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">lbl</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="cp">#elseif os(macOS)</span>
+        <span class="k">override</span> <span class="kd">func</span> <span class="nf">loadView</span><span class="p">()</span> <span class="p">{</span> <span class="n">view</span> <span class="o">=</span> <span class="kt">MyView</span><span class="p">()</span> <span class="p">}</span>
+    <span class="cp">#endif</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">OSView</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="n">kBounds</span><span class="o">!.</span><span class="n">height</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">60</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="n">kBounds</span><span class="o">!.</span><span class="n">width</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">40</span><span class="p">))</span>
+        <span class="cp">#if os(iOS) || os(tvOS)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">kStr</span>
+        <span class="cp">#elseif os(macOS)</span>
+            <span class="n">stringValue</span> <span class="o">=</span> <span class="n">kStr</span>
+        <span class="cp">#endif</span>
+    <span class="p">}</span>
+
+    <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span> <span class="p">{</span> <span class="nf">fatalError</span><span class="p">()</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">#endif</span>
+</code></pre>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 13.0+ / macOS 10.15+ / tvOS 13.0+ / watchOS 6.0+</li>
+<li>Xcode 11+</li>
+<li>Swift 5.1+</li>
+</ul>
+<h2 id='communication' class='heading'>Communication</h2>
+
+<ul>
+<li>QQ Group: 1027277979</li>
+<li>If you&rsquo;d like to contact me, use mail:<a href="mailto:3440217568@qq.com">3440217568@qq.com</a> or QQ:3440217568 or WeChat:adongenjoylife or telephone:15674119605.</li>
+<li>If you found a bug, and can provide steps to reliably reproduce it, please open an issue.</li>
+<li>If you have a feature request, please open an issue.</li>
+<li>If you want to contribute, please submit a pull request.</li>
+</ul>
+<h2 id='status' class='heading'>Status</h2>
+
+<p>This project is actively under development. We consider it ready for production use.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Below is a table that shows which version of InterfaceKit you should use for your Swift version.</p>
+
+<table><thead>
+<tr>
+<th>Swift</th>
+<th>InterfaceKit</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>5.X</td>
+<td>&gt;= 5.4.0</td>
+</tr>
+</tbody></table>
+
+<p>InterfaceKit supports multiple methods for installing the library in a project.</p>
+<h3 id='copy-to-your-project' class='heading'>Copy to your project</h3>
+
+<p>Clone the repository by running the following command:</p>
+<pre class="highlight plaintext"><code>git clone https://github.com/adong666666/InterfaceKit.git --depth=1
+</code></pre>
+
+<p>Copy the Swift files in <code>InterfaceKit</code> folder to your project.</p>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/copy_files.png" alt="Copy files" /></div>
+
+<ul>
+<li>If for iOS or tvOS project, you can copy the file <code>UIInterface.swift</code>.</li>
+<li>If for macOS project, you can copy the file <code>NSInterface.swift</code>.</li>
+<li>If for watchOS project, you can copy the file <code>WKInterface.swift</code>.</li>
+</ul>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. If you have not installed CocoaPods, just install it with the following command:</p>
+<pre class="highlight plaintext"><code>$ gem install cocoapods
+</code></pre>
+
+<p><br />
+You need a <code>Podfile</code> to Integrate InterfaceKit into your Xcode project with CocoaPods. If you do not have a Podfile, just create one or use the Podfile provided in <code>PodfileExample</code> folder by this repository. Podfile is as follows.</p>
+<pre class="highlight ruby"><code><span class="c1"># Podfile</span>
+<span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+<span class="c1"># platform:ios, '13.0'</span>
+<span class="n">use_frameworks!</span>
+<span class="n">inhibit_all_warnings!</span>
+
+<span class="n">target</span> <span class="s1">'YOUR_TARGET_NAME'</span> <span class="k">do</span>
+    <span class="n">pod</span> <span class="s1">'InterfaceKit'</span>
+<span class="k">end</span>
+
+<span class="c1"># post_install do |installer_representation|</span>
+<span class="c1">#   installer_representation.pods_project.targets.each do |target|</span>
+<span class="c1">#     target.build_configurations.each do |config|</span>
+<span class="c1">#       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'</span>
+<span class="c1">#     end</span>
+<span class="c1">#   end</span>
+<span class="c1"># end</span>
+</code></pre>
+
+<p>Replace <code>YOUR_TARGET_NAME</code> with your project name.
+To integrate InterfaceKit into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit'</span>
+</code></pre>
+
+<p>Maybe you have not update CocoaPods, then <code>InterfaceKit</code> may not be found, you can run <code>pod update</code> to update CocoaPods, or just run the following command. </p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/adong666666/InterfaceKit.git'</span>
+</code></pre>
+
+<ul>
+<li><p>If just for iOS or tvOS project, you can specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit/UIKit'</span>
+</code></pre></li>
+<li><p>If just for mac project, you can specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit/AppKit'</span>
+</code></pre></li>
+<li><p>If just for watchOS project, you can specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit/WatchKit'</span>
+</code></pre></li>
+<li><p>If you want to use the newest release of the framework, you can specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/adong666666/InterfaceKit.git'</span>
+</code></pre></li>
+<li><p>If you want to use the <code>specific</code> release of the framework, you can specify it like following in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'InterfaceKit'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/adong666666/InterfaceKit.git'</span><span class="p">,</span> <span class="ss">:branch</span> <span class="o">=&gt;</span> <span class="s1">'master'</span><span class="c1">#, commit: "b7e1facdedd8fe16d04ef5f47c4697e89bad9f27", '~&gt; 5.4.0', :tag =&gt; '5.4.0'</span>
+</code></pre></li>
+</ul>
+
+<p>Then, in the <code>Podfile</code> directory(Make sure that your Podfile and your xcodeproj file are in the same directory), run the following command:</p>
+<pre class="highlight plaintext"><code>$ pod install
+</code></pre>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/PodfileLocation.png" alt="Podfile Location" /></div>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.</p>
+
+<ol>
+<li><p>To integrate InterfaceKit into your Xcode project using Carthage, specify it in your <code>Cartfile</code>(If you don&rsquo;t have Cartfile, just create one or use the Cartfile provided by this repository in <code>CartfileExample</code> folder):</p>
+<pre class="highlight plaintext"><code>github "adong666666/InterfaceKit" "master"
+</code></pre></li>
+<li><p>Then, in the <code>Cartfile</code> directory(Make sure that your Podfile and your xcodeproj file are in the same directory), run <code>carthage update --use-xcframeworks</code>. 
+OR</p>
+
+<ul>
+<li>For iOS project, Run <code>carthage update --platform iOS</code>.</li>
+<li>For macOS project, Run <code>carthage update --platform macOS</code>.</li>
+<li>For tvOS project, Run <code>carthage update --platform tvOS</code>.</li>
+<li>For watchOS project, Run <code>carthage update --platform watchOS</code>. 
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/CartfileLocation.png" alt="Cartfile Location" /></div></li>
+</ul></li>
+<li><p>On your application targets’ <code>&quot;General&quot;</code> settings tab, in the <code>&quot;Frameworks,Libraries,and Embedded Content&quot;</code> section, drag and drop <code>InterfaceKit</code> xcframework (or just select the appropriate framework from xcframework) from the Carthage/Build folder on disk.</p></li>
+</ol>
+<h4 id='carthage-as-a-static-library' class='heading'>Carthage as a Static Library</h4>
+
+<p>Carthage defaults to building InterfaceKit as a Dynamic Library. </p>
+
+<p>If you wish to build InterfaceKit as a Static Library using Carthage you may use the script below to manually modify the framework type before building with Carthage:</p>
+<pre class="highlight shell"><code>carthage update InterfaceKit <span class="nt">--platform</span> iOS <span class="nt">--no-build</span>
+<span class="nb">sed</span> <span class="nt">-i</span> <span class="nt">-e</span> <span class="s1">'s/MACH_O_TYPE = mh_dylib/MACH_O_TYPE = staticlib/g'</span> Carthage/Checkouts/InterfaceKit/InterfaceKit/InterfaceKit.xcodeproj/project.pbxproj
+carthage build InterfaceKit <span class="nt">--platform</span> iOS
+</code></pre>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>The <a href="https://swift.org/package-manager/">Swift Package Manager</a> is a tool for automating the distribution of Swift code and is integrated into the <code>swift</code> compiler. It is in early development, but InterfaceKit does support its use on supported platforms.</p>
+
+<ol>
+<li>Once you have your Swift package set up, adding InterfaceKit as a dependency is as easy as adding it to the <code>dependencies</code> value of your <code>Package.swift</code>. Then run <code>swift build</code>.</li>
+</ol>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/adong666666/InterfaceKit.git"</span><span class="p">,</span> <span class="o">.</span><span class="nf">upToNextMajor</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"5.4.0"</span><span class="p">))</span>
+<span class="p">]</span>
+</code></pre>
+
+<p>OR</p>
+
+<ol>
+<li>In Xcode, select File &gt; Swift Packages &gt; Add Package Dependency.</li>
+<li>Follow the prompts using the URL(&ldquo;<a href="https://github.com/adong666666/InterfaceKit.git%22">https://github.com/adong666666/InterfaceKit.git&rdquo;</a>) for this repository.
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/SwiftPackageManager.png" alt="Swift Package Manager Configuration" /></div></li>
+</ol>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use any of the aforementioned dependency managers, you can integrate InterfaceKit into your project manually.</p>
+<h4 id='embedded-framework' class='heading'>Embedded Framework</h4>
+
+<ul>
+<li>Open up Terminal, <code>cd</code> into your top-level project directory, and run the following command &ldquo;if&rdquo; your project is not initialized as a git repository:</li>
+</ul>
+<pre class="highlight shell"><code><span class="nv">$ </span>git init
+</code></pre>
+
+<ul>
+<li>Add InterfaceKit as a git <a href="https://git-scm.com/docs/git-submodule">submodule</a> by running the following command:</li>
+</ul>
+<pre class="highlight shell"><code><span class="nv">$ </span>git submodule add https://github.com/adong666666/InterfaceKit.git
+</code></pre>
+
+<ul>
+<li><p>Open the <code>InterfaceKit</code> folder, and drag the <code>InterfaceKit.xcodeproj</code> into the Project Navigator of your application&rsquo;s Xcode project.</p>
+
+<blockquote>
+<p>It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.</p>
+</blockquote></li>
+</ul>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/drag_framework.png" alt="Drag and drop xcodeproj" /></div>
+
+<ul>
+<li>Select the <code>InterfaceKit.xcodeproj</code> in the Project Navigator and verify the deployment target matches that of your application target.</li>
+<li>Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.</li>
+<li>In the tab bar at the top of that window, open the <code>&quot;General&quot;</code> panel.</li>
+<li>Click on the <code>+</code> button under the <code>&quot;Frameworks,Libraries,and Embedded Content&quot;</code> section.</li>
+<li><p>You will see the <code>InterfaceKit</code> folder under <code>Workspace</code>. There are <code>InterfaceKit.framework</code> and  <code>InterfaceKitTests.xctest</code> in the <code>InterfaceKit</code> folder`</p>
+
+<blockquote>
+<p>Click <code>InterfaceKit.framework</code>, and then click <code>Add</code></p>
+</blockquote></li>
+</ul>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/add_framework.png" alt="Add framework" /></div>
+
+<ul>
+<li><p>And that&rsquo;s it!</p>
+
+<blockquote>
+<p>The <code>InterfaceKit.framework</code> is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.</p>
+</blockquote></li>
+</ul>
+<h3 id='unzip-drag-and-drop' class='heading'>Unzip,drag and drop</h3>
+
+<ol>
+<li><p>Unzip the <code>InterfaceKit.xcframework.zip</code> file provided by the repository.</p>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/unzip.png" alt="Unzip" /></div></li>
+<li><p>On your application targets’ <code>“General”</code> settings tab, in the <code>&quot;Frameworks,Libraries,and Embedded Content&quot;</code> section, drag and drop the unzipped file <code>InterfaceKit.xcframework</code> (or just select the appropriate framework from InterfaceKit.xcframework).</p></li>
+<li><p>If you use <code>xcfameworks</code>, just drag and drop <code>InterfaceKit.xcframework</code>. <code>InterfaceKit.xcframework</code> supports all four platforms(<code>iOS, macOS, tvOS, watchOS</code>).</p>
+
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/use_xcframeworks.png" alt="Use xcframeworks" /></div></li>
+</ol>
+
+<ul>
+<li>If you use <code>frameworks</code>, select the appropriate framework from InterfaceKit.xcframework according to the folder name and the platform of your project.
+<div align="center"><img src="https://github.com/adong666666/InterfaceKit/raw/master/Pictures/use_frameworks.png" alt="Use frameworks" /></div></li>
+</ul>
+<h2 id='faq' class='heading'>FAQ</h2>
+<h3 id='why-use-interfacekit' class='heading'>Why use InterfaceKit?</h3>
+
+<p><code>One line of code</code> to implement interfaces of <code>UIKit,AppKit,and WatchKit</code> in <code>SwiftUI</code> interface! InterfaceKit supports for all four platforms(<code>iOS, macOS, tvOS, watchOS</code>). InterfaceKit is <code>constantly</code> updated.</p>
+<h2 id='credits' class='heading'>Credits</h2>
+
+<p>InterfaceKit is owned and maintained by <a href="https://zsd.name">Saidong Zhang</a>. You can follow him on github at <a href="https://github.com/adong666666">@Github</a> for project updates and releases. </p>
+<h3 id='security-disclosure' class='heading'>Security Disclosure</h3>
+
+<p>If you believe you have identified a security vulnerability with InterfaceKit, you should report it as soon as possible via email to <a href="mailto:3440217568@qq.com">3440217568@qq.com</a>. </p>
+<h2 id='donations' class='heading'>Donations</h2>
+
+<p>No donation required, but thanks anyway.</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Hey! Do you like InterfaceKit? Awesome! We could actually really use your help!</p>
+
+<p>Open source isn&rsquo;t just writing code. InterfaceKit could use your help with any of the following:</p>
+
+<ul>
+<li>Finding (and reporting!) bugs.</li>
+<li>New feature suggestions.</li>
+<li>Answering questions on issues.</li>
+<li>Documentation improvements.</li>
+<li>Reviewing pull requests.</li>
+<li>Helping to manage issue priorities.</li>
+<li>Fixing bugs/new features.</li>
+</ul>
+
+<p>If any of that sounds cool to you, send a pull request! After your first contribution, we will add you as a member to the repo so you can merge pull requests and help steer the ship :ship: You can read more details about that <a href="https://github.com/adong666666/InterfaceKit/blob/master/CONTRIBUTING.md">in our contributor guidelines</a>.</p>
+
+<p>InterfaceKit&rsquo;s community has a tremendous positive energy, and the maintainers are committed to keeping things awesome. Like <a href="https://github.com/CocoaPods/CocoaPods/wiki/Communication-&-Design-Rules">in the CocoaPods community</a>, always assume positive intent; even if a comment sounds mean-spirited, give the person the benefit of the doubt.</p>
+
+<p>Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by <a href="https://github.com/adong666666/InterfaceKit/blob/master/Code%20of%20Conduct.md">its terms</a>.</p>
+<h3 id='adding-new-source-files' class='heading'>Adding new source files</h3>
+
+<p>If you add or remove a source file from InterfaceKIt, a corresponding change needs to be made to the <code>InterfaceKit.xcworkspace</code> project at the root of this repository. This project is used for Carthage. Don&rsquo;t worry, you&rsquo;ll get an automated warning when submitting a pull request if you forget.</p>
+<h3 id='help-us-improve-interfacekit-documentation' class='heading'>Help us improve InterfaceKit documentation</h3>
+
+<p>Whether you’re a core member or a user trying it out for the first time, you can make a valuable contribution to InterfaceKit by improving the documentation. Help us by:</p>
+
+<ul>
+<li>sending us feedback about something you thought was confusing or simply missing</li>
+<li>suggesting better wording or ways of explaining certain topics</li>
+<li>sending us a pull request via GitHub</li>
+<li>improving the <a href="https://github.com/adong666666/InterfaceKit/blob/master/README.zh-Hans.md">Chinese documentation</a></li>
+</ul>
+<h3 id='too-wordy-about-the-above-then-just-do-it' class='heading'>Too wordy about the above? Then just do it.</h3>
+
+<ul>
+<li>Fork the repository!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am &#39;Add some feature&#39;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request</li>
+<li>Other: 
+<a href="https://github.com/adong666666/InterfaceKit/blob/master/CONTRIBUTING.md">See CONTRIBUTING.md</a> for details.</li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>InterfaceKit is released under the MIT license. <a href="https://github.com/adong666666/InterfaceKit/blob/master/LICENSE.md">See LICENSE</a> for details.</p>
+<h2 id='history' class='heading'>History</h2>
+
+<p><a href="https://github.com/adong666666/InterfaceKit/blob/master/CHANGELOG.md">See CHANGELOG.md</a> for details.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://zsd.name/" target="_blank" rel="external">Saidong Zhang</a>. All rights reserved. (Last updated: 2021-05-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

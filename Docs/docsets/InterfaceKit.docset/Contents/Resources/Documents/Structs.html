@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+
+    <a title="Structures  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          InterfaceKit 5.4.0 Docs
+        </a>
+         (93% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/adong666666/InterfaceKit">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fzsd.name%2FInterfaceKit%2Fdocsets%2FInterfaceKit.xml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">InterfaceKit Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Structures  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceView.html">InterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceViewController.html">InterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InterfaceViewController.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceView.html">NSInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceView.html#/s:12InterfaceKit15NSInterfaceViewV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceViewController.html">NSInterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/NSInterfaceViewController.html#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WKInterfaceView.html">WKInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WKInterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/NSInterfaceView"></a>
+                <a name="//apple_ref/swift/Section/NSInterfaceView" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/NSInterfaceView"></a>
+                  <h3 class="section-name"><p>NSInterfaceView</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit15NSInterfaceViewV"></a>
+                    <a name="//apple_ref/swift/Struct/NSInterfaceView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit15NSInterfaceViewV">NSInterfaceView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>NSInterfaceView</code> struct helps you to use AppKit NSView or its
+derived class in project using SwiftUI.<code>NSInterfaceView</code> is a type that represents
+part of your app&rsquo;s user interface using AppKit and provides modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your AppKitt
+View by using <code>NSInterfaceView(MyView())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">NSInterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">NSInterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>NSInterfaceView</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">NSInterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>A wrapper that you use to integrate an AppKit view into your SwiftUI view
+hierarchy.</p>
+
+<p>Use an <code>NSInterfaceView</code> instance to create and manage an
+<a href="doc://com.apple.documentation/documentation/AppKit/NSView">doc://com.apple.documentation/documentation/AppKit/NSView</a> object in your SwiftUI
+interface. Adopt this protocol in one of your app&rsquo;s custom instances, and
+use its methods to create, update, and tear down your view. The creation and
+update processes parallel the behavior of SwiftUI views, and you use them to
+configure your view with your app&rsquo;s current state information. Use the
+teardown process to remove your view cleanly from your SwiftUI. For example,
+you might use the teardown process to notify other objects that the view is
+disappearing.</p>
+
+<p>To add your view into your SwiftUI interface, create your
+<code>NSInterfaceView</code> instance and add it to your SwiftUI interface. The
+system calls the methods of your representable instance at appropriate times
+to create and update the view. The following example shows the inclusion of
+a <code>NSInterfaceView</code> in the view hierarchy.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+   <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+      <span class="kt">ZStack</span> <span class="p">{</span>
+         <span class="kt">Text</span><span class="p">(</span><span class="s">"Global Sales"</span><span class="p">)</span>
+         <span class="kt">NSInterfaceView</span><span class="p">(</span><span class="kt">MyNSView</span><span class="p">())</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+view controller to other parts of your SwiftUI interface. When you want your
+view controller to coordinate with other SwiftUI views, you must provide a
+<code>NSViewControllerRepresentable/Coordinator</code> object to facilitate those
+interactions. For example, you use a coordinator to forward target-action
+and delegate messages from your view controller to any SwiftUI views.</p>
+
+                        <a href="Structs/NSInterfaceView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NSInterfaceView</span> <span class="p">:</span> <span class="kt">NSViewRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/NSInterfaceViewController"></a>
+                <a name="//apple_ref/swift/Section/NSInterfaceViewController" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/NSInterfaceViewController"></a>
+                  <h3 class="section-name"><p>NSInterfaceViewController</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12InterfaceKit25NSInterfaceViewControllerV"></a>
+                    <a name="//apple_ref/swift/Struct/NSInterfaceViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12InterfaceKit25NSInterfaceViewControllerV">NSInterfaceViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>NSInterfaceViewController</code> struct helps you to use AppKit NSViewController or its
+derived class in project using SwiftUI. <code>NSInterfaceViewController</code> is a type that
+represents part of your app&rsquo;s user interface using AppKit and provides
+modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your AppKit
+ViewController View by using <code>NSInterfaceViewController(MyViewController())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>NSInterfaceViewController</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">NSInterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>A wrapper that you use to integrate an AppKit view controller into your
+SwiftUI interface.</p>
+
+<p>Use an <code>NSViewControllerRepresentable</code> instance to create and manage an
+<a href="doc://com.apple.documentation/documentation/AppKit/NSViewController">doc://com.apple.documentation/documentation/AppKit/NSViewController</a> object in your
+SwiftUI interface. Adopt this protocol in one of your app&rsquo;s custom
+instances, and use its methods to create, update, and tear down your view
+controller. The creation and update processes parallel the behavior of
+SwiftUI views, and you use them to configure your view controller with your
+app&rsquo;s current state information. Use the teardown process to remove your
+view controller cleanly from your SwiftUI. For example, you might use the
+teardown process to notify other objects that the view controller is
+disappearing.</p>
+
+<p>To add your view controller into your SwiftUI interface, create your
+<code>NSViewControllerRepresentable</code> instance and add it to your SwiftUI
+interface. The system calls the methods of your custom instance at
+appropriate times.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+view controller to other parts of your SwiftUI interface. When you want your
+view controller to coordinate with other SwiftUI views, you must provide a
+<code>NSViewControllerRepresentable/Coordinator</code> instance to facilitate those
+interactions. For example, you use a coordinator to forward target-action
+and delegate messages from your view controller to any SwiftUI views.</p>
+
+                        <a href="Structs/NSInterfaceViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NSInterfaceViewController</span> <span class="p">:</span> <span class="kt">NSViewControllerRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InterfaceView"></a>
+                <a name="//apple_ref/swift/Section/InterfaceView" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/InterfaceView"></a>
+                  <h3 class="section-name"><p>InterfaceView</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Struct/InterfaceView" class="dashAnchor"></a>
+                    <a class="token" href="#/">InterfaceView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>InterfaceView</code> struct helps you to use UIKit UIView or its
+derived class in project using SwiftUI.<code>InterfaceView</code> is a type that represents
+part of your app&rsquo;s user interface using UIKit and provides modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your UIKit
+View  by using <code>InterfaceView(MyView())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">InterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">InterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>InterfaceView</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">InterfaceView</span><span class="p">(</span><span class="kt">MyView</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Use an <code>InterfaceView</code> instance to create and manage a
+<a href="doc://com.apple.documentation/documentation/UIKit/UIViewController">doc://com.apple.documentation/documentation/UIKit/UIViewController</a> object in your
+SwiftUI interface. Use this struct  in one of your app&rsquo;s custom
+instances, and use its methods to create, update, and tear down your view
+controller. The creation and update processes parallel the behavior of
+SwiftUI views, and you use them to configure your view controller with your
+app&rsquo;s current state information. Use the teardown process to remove your
+view controller cleanly from your SwiftUI. For example, you might use the
+teardown process to notify other objects that the view controller is
+disappearing.</p>
+
+<p>To add your view controller into your SwiftUI interface, create your
+<code>InterfaceView</code> instance and add it to your SwiftUI
+interface. The system calls the methods of your custom instance at
+appropriate times.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+view controller to other parts of your SwiftUI interface. When you want your
+view controller to coordinate with other SwiftUI views, you must provide a
+<code>NSViewControllerRepresentable/Coordinator</code> instance to facilitate those
+interactions. For example, you use a coordinator to forward target-action
+and delegate messages from your view controller to any SwiftUI views.</p>
+
+                        <a href="Structs/InterfaceView.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InterfaceViewController"></a>
+                <a name="//apple_ref/swift/Section/InterfaceViewController" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/InterfaceViewController"></a>
+                  <h3 class="section-name"><p>InterfaceViewController</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Struct/InterfaceViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/">InterfaceViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>InterfaceViewController</code> struct helps you to use UIKit UIViewController or its
+derived class in project using SwiftUI. <code>InterfaceViewController</code> is a type that
+represents part of your app&rsquo;s user interface using UIKit and provides
+modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your UIKit
+ViewController View by using <code>InterfaceViewController(MyViewController())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>InterfaceViewController</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">InterfaceViewController</span><span class="p">(</span><span class="kt">MyViewController</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Use an <code>InterfaceViewController</code> instance to create and manage a
+<a href="doc://com.apple.documentation/documentation/UIKit/UIViewController">doc://com.apple.documentation/documentation/UIKit/UIViewController</a> object in your
+SwiftUI interface. Use this struct  in one of your app&rsquo;s custom
+instances, and use its methods to create, update, and tear down your view
+controller. The creation and update processes parallel the behavior of
+SwiftUI views, and you use them to configure your view controller with your
+app&rsquo;s current state information. Use the teardown process to remove your
+view controller cleanly from your SwiftUI. For example, you might use the
+teardown process to notify other objects that the view controller is
+disappearing.</p>
+
+<p>To add your view controller into your SwiftUI interface, create your
+<code>InterfaceViewController</code> instance and add it to your SwiftUI
+interface. The system calls the methods of your custom instance at
+appropriate times.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+view controller to other parts of your SwiftUI interface. When you want your
+view controller to coordinate with other SwiftUI views, you must provide a
+<code>NSViewControllerRepresentable/Coordinator</code> instance to facilitate those
+interactions. For example, you use a coordinator to forward target-action
+and delegate messages from your view controller to any SwiftUI views.</p>
+
+                        <a href="Structs/InterfaceViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/WKInterfaceView"></a>
+                <a name="//apple_ref/swift/Section/WKInterfaceView" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/WKInterfaceView"></a>
+                  <h3 class="section-name"><p>WKInterfaceView</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Struct/WKInterfaceView" class="dashAnchor"></a>
+                    <a class="token" href="#/">WKInterfaceView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>WKInterfaceView</code> struct helps you to use WatchKiit WKInterfaceObject or its
+derived class in project using SwiftUI.<code>WKInterfaceView</code> is a type that represents
+part of your app&rsquo;s user interface using WatchKit and provides modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your WatchKit
+WKInterfaceObject by using <code>WKInterfaceView(MyWKInterfaceObject())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyWKInterfaceObject</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>WKInterfaceView</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>A view that represents a WatchKit interface object.</p>
+
+<p>Use a <code>WKInterfaceObjectRepresentable</code> instance to create and manage a
+<a href="doc://com.apple.documentation/documentation/WatchKit/WKInterfaceObject">doc://com.apple.documentation/documentation/WatchKit/WKInterfaceObject</a> in your SwiftUI
+interface. Adopt this protocol in one of your app&rsquo;s custom instances, and
+use its methods to create, update, and tear down your interface object. The
+creation and update processes parallel the behavior of SwiftUI views, and
+you use them to configure your interface object with your app&rsquo;s current
+state information. Use the teardown process to remove your interface object
+cleanly from your SwiftUI. For example, you might use the teardown process
+to notify other parts of your app that the interface object is disappearing.</p>
+
+<p>To add your interface object into your SwiftUI interface, create your
+<code>UIViewRepresentable</code> instance and add it to your SwiftUI interface. The
+system calls the methods of your representable instance at appropriate times
+to create and update the interface object.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+interface object to other parts of your SwiftUI interface. When you want
+your interface object to coordinate with other SwiftUI views, you must
+provide a <code>NSViewControllerRepresentable/Coordinator</code> instance to
+facilitate those interactions. For example, you use a coordinator to forward
+target-action and delegate messages from your interface object to any
+SwiftUI views.</p>
+
+                        <a href="Structs/WKInterfaceView.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://zsd.name/" target="_blank" rel="external">Saidong Zhang</a>. All rights reserved. (Last updated: 2021-05-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

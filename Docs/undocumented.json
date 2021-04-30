@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/zhangsaidong/Desktop/project2/CommomlyUsed/InterfaceKit/Sources/InterfaceKit/NSInterface.swift",
+      "line": 107,
+      "symbol": "NSInterfaceView.init(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/zhangsaidong/Desktop/project2/CommomlyUsed/InterfaceKit"
+}

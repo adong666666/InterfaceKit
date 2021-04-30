@@ -1,0 +1,8 @@
+author: Saidong Zhang
+author_url: https://zsd.name/
+github_url: https://github.com/adong666666/InterfaceKit
+root_url: https://zsd.name/InterfaceKit/
+module: InterfaceKit
+output: Docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'InterfaceKit.xcworkspace', -scheme, 'InterfaceKit']

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:InterfaceKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Example/macOSExample/macOSExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Example/tvOSExample/tvOSExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Example/watchOSExample/watchOSExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Example/iOSExample/Example.xcodeproj">
+   </FileRef>
+</Workspace>

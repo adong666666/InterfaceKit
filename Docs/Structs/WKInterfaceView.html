@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WKInterfaceView Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/WKInterfaceView" class="dashAnchor"></a>
+
+    <a title="WKInterfaceView Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          InterfaceKit 5.4.0 Docs
+        </a>
+         (93% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/adong666666/InterfaceKit">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fzsd.name%2FInterfaceKit%2Fdocsets%2FInterfaceKit.xml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">InterfaceKit Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      WKInterfaceView Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceView.html">InterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceViewController.html">InterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/InterfaceViewController.html#/Coordinator">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceView.html">NSInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceView.html#/s:12InterfaceKit15NSInterfaceViewV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceViewController.html">NSInterfaceViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NSInterfaceViewController.html#/s:12InterfaceKit25NSInterfaceViewControllerV11CoordinatorC">– Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WKInterfaceView.html">WKInterfaceView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WKInterfaceView.html#/Coordinator">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>WKInterfaceView</h1>
+            <p>The <code>WKInterfaceView</code> struct helps you to use WatchKiit WKInterfaceObject or its
+derived class in project using SwiftUI.<code>WKInterfaceView</code> is a type that represents
+part of your app&rsquo;s user interface using WatchKit and provides modifiers that you use to configure views.</p>
+
+<p>You create custom views by declaring types that conform to the <code>View</code>
+protocol. Implement the required <code>View/body-swift.property</code> computed
+property to provide the content for your custom view. Then you can present your WatchKit
+WKInterfaceObject by using <code>WKInterfaceView(MyWKInterfaceObject())</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyWKInterfaceObject</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code>View</code> protocol provides a large set of modifiers, defined as protocol
+methods with default implementations, that you use to position and configure
+views in the layout of your app. Modifiers typically work by wrapping the
+view instance on which you call them in another view with the specified
+characteristics. For example, adding the <code>View/opacity(_:)</code> modifier to a
+interface view returns a new view with some amount of transparency:</p>
+<pre class="highlight swift"><code><span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="o">.</span><span class="nf">opacity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">// Display partially transparent interface view.</span>
+</code></pre>
+
+<p>It is recommended to use <code>ZStack</code> with <code>WKInterfaceView</code> , as follows.</p>
+<pre class="highlight swift"><code><span class="kt">ZStack</span> <span class="p">{</span>
+    <span class="kt">WKInterfaceView</span><span class="p">(</span><span class="kt">MyWKInterfaceObject</span><span class="p">())</span>
+    <span class="kt">MySwiftUIView</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>A view that represents a WatchKit interface object.</p>
+
+<p>Use a <code>WKInterfaceObjectRepresentable</code> instance to create and manage a
+<a href="doc://com.apple.documentation/documentation/WatchKit/WKInterfaceObject">doc://com.apple.documentation/documentation/WatchKit/WKInterfaceObject</a> in your SwiftUI
+interface. Adopt this protocol in one of your app&rsquo;s custom instances, and
+use its methods to create, update, and tear down your interface object. The
+creation and update processes parallel the behavior of SwiftUI views, and
+you use them to configure your interface object with your app&rsquo;s current
+state information. Use the teardown process to remove your interface object
+cleanly from your SwiftUI. For example, you might use the teardown process
+to notify other parts of your app that the interface object is disappearing.</p>
+
+<p>To add your interface object into your SwiftUI interface, create your
+<code>UIViewRepresentable</code> instance and add it to your SwiftUI interface. The
+system calls the methods of your representable instance at appropriate times
+to create and update the interface object.</p>
+
+<p>The system doesn&rsquo;t automatically communicate changes occurring within your
+interface object to other parts of your SwiftUI interface. When you want
+your interface object to coordinate with other SwiftUI views, you must
+provide a <code>NSViewControllerRepresentable/Coordinator</code> instance to
+facilitate those interactions. For example, you use a coordinator to forward
+target-action and delegate messages from your interface object to any
+SwiftUI views.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/wkInterfaceView" class="dashAnchor"></a>
+                    <a class="token" href="#/">wkInterfaceView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of view to present.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/callback" class="dashAnchor"></a>
+                    <a class="token" href="#/">callback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>closure</code> helps you finish some special things like work to be done in WatchKit interface.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/init(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">init(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>WKInterfaceView</code> instance from the specified parameters.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/makeWKInterfaceObject(context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">makeWKInterfaceObject(context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a WatchKit interface object and configures its initial state.</p>
+
+<p>You must implement this method and use it to create your interface
+object. Configure the object using your app&rsquo;s current data and contents
+of the <code>context</code> parameter. The system calls this method only once, when
+it creates your interface object for the first time. For all subsequent
+updates, the system calls the
+<code>WKInterfaceObjectRepresentable/updateWKInterfaceObject(_:context:)</code>
+method.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/updateWKInterfaceObject(_:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">updateWKInterfaceObject(_:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the presented WatchKit interface object (and its coordinator) to
+the latest configuration.</p>
+
+<p>When the state of your app changes, SwiftUI updates the portions of your
+interface affected by those changes. SwiftUI calls this method for any
+changes affecting the corresponding interface object. Use this method to
+update the configuration of your object to match the new state
+information provided in the <code>context</code> parameter.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Class/Coordinator" class="dashAnchor"></a>
+                    <a class="token" href="#/">Coordinator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A return type for function <code>makeCoordinator</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/makeCoordinator()" class="dashAnchor"></a>
+                    <a class="token" href="#/">makeCoordinator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates the custom instance that you use to communicate changes from
+your interface object to other parts of your SwiftUI interface.</p>
+
+<p>Implement this method if changes to your interface object might affect
+other parts of your app. In your implementation, create a custom Swift
+instance that can communicate with other parts of your interface. For
+example, you might provide an instance that binds its variables to
+SwiftUI properties, causing the two to remain synchronized. If your
+interface object doesn&rsquo;t interact with other parts of your app,
+providing a coordinator is unnecessary.</p>
+
+<p>SwiftUI calls this method before calling the
+<code>WKInterfaceObjectRepresentable/makeWKInterfaceObject(context:)</code>
+method. The system provides your coordinator either directly or as part
+of a context structure when calling the other methods of your
+representable instance.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://zsd.name/" target="_blank" rel="external">Saidong Zhang</a>. All rights reserved. (Last updated: 2021-05-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

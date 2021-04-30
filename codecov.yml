@@ -1,0 +1,6 @@
+coverage:
+  ignore:
+    - CartfileExample
+    - PodfileExample
+    - Example
+    - Tests
